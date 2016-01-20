@@ -23,6 +23,7 @@ module.exports = React.createClass({
     colors:             React.PropTypes.func,
     colorAccessor:      React.PropTypes.func,
     title:              React.PropTypes.string,
+    legend:             React.PropTypes.bool,
     showInnerLabels:    React.PropTypes.bool,
     showOuterLabels:    React.PropTypes.bool,
     sectorBorderColor:  React.PropTypes.string,
@@ -54,6 +55,7 @@ module.exports = React.createClass({
           width={props.width}
           height={props.height}
           title={props.title}
+          legend={props.legend}
         >
           <g className='rd3-piechart'>
             <DataSeries
